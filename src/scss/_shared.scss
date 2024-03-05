@@ -1,0 +1,161 @@
+$color--global-background-: #161616;
+$color--global-text: #fcf5e9;
+$color--scrollbar-dark: #000030;
+$color--scrollbar-light: #2d496b;
+$color--global-green: #98ce00;
+$color--global-gray: #989898;
+$color--global-button: #2d496b;
+$color--global-error: rgba(255, 0, 0, 0.8);
+$color--global-js-yellow: #ffdf00;
+
+@mixin highlighted-text($color) {
+  color: $color;
+}
+
+// Error mixins
+@mixin error-message_add-paddings-left-top($padding-top, $padding-left) {
+  animation: fadeIn 0.5s ease-in-out;
+  color: $color--global-error;
+  font-size: 1.8vh;
+  position: absolute;
+  padding-top: $padding-top;
+  padding-left: $padding-left;
+  max-width: 100%;
+}
+
+// Button mixins
+@mixin button-submit-small() {
+  font-family: "JetBrains Mono";
+  font-weight: 500;
+  font-size: 2vh;
+  background-color: $color--global-gray;
+  border: none !important;
+  min-height: 5vh;
+  margin-top: 2vh;
+  transition: background-color 0.3s ease;
+
+  &:active {
+    background-color: $color--global-green !important;
+    transform: scaleX(0.99);
+  }
+  &:focus {
+    border: none !important;
+    background-color: $color--global-green !important;
+    box-shadow: none;
+  }
+  &:hover {
+    border: none !important;
+    background-color: $color--global-green !important;
+  }
+}
+
+@mixin search-button-small($width) {
+  background-color: transparent !important;
+  border: 2px solid $color--global-text;
+  flex-shrink: 0;
+  transition: transform 0.2s ease-in-out;
+  margin-left: 1vw;
+  display: flex;
+  width: ($width);
+
+  &:hover {
+    border-color: $color--global-text !important;
+    transform: scale(1.1);
+  }
+  &:active {
+    opacity: 0.5;
+  }
+
+  &-img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+// Form mixins
+@mixin form-input-group() {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  font-family: "JetBrains Mono";
+}
+
+@mixin form-base_add-width($width) {
+  width: $width;
+  padding: 2vh 1vw 2vh 1vw;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin form-input() {
+  font-size: 2vh;
+  font-family: "JetBrains Mono";
+}
+
+@mixin form-label() {
+  font-size: 1.6vh;
+  line-height: 1.7;
+}
+
+@mixin formtitle($font-size) {
+  font-family: "JetBrains Mono";
+  color: $color--global-gray;
+  font-weight: 200;
+  padding-bottom: 2vh;
+  font-size: $font-size;
+}
+
+// Animations
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.3s ease-in-out forwards;
+}
+
+@mixin fade-in__add-duration($duration) {
+  animation-name: fadeIn;
+  animation-duration: $duration;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+}
+
+// Text
+@mixin textarea__add-font-weight($weight) {
+  font-family: "JetBrains Mono";
+  font-weight: $weight;
+  text-indent: 1vw;
+  line-height: 1.6;
+}
+
+// Медиа
+@mixin media__add-screen-width($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+.custom-tooltip .tooltip-inner {
+  color: $color--global-text;
+  font-size: large;
+}

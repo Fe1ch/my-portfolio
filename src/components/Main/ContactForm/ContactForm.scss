@@ -1,0 +1,52 @@
+@import "../../../scss/_shared.scss";
+
+.contact-form {
+  @include form-base_add-width(100%);
+  padding: 8vh 0vw 2vh 0vw;
+
+  @media (max-width: 768px) {
+    padding: 8vh 0vw 2vh 0vw;
+  }
+
+  @media (max-width: 576px) {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__title {
+    @include formtitle(2.5vh);
+  }
+
+  &__group {
+    @include form-input-group;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__label {
+    @include form-label;
+  }
+
+  &__input {
+    @include form-input;
+
+    &::placeholder {
+      color: rgba(255, 0, 0, 0.8);
+      font-size: 1.8vh;
+    }
+  }
+
+  &__error-message {
+    @include error-message_add-paddings-left-top(7.5vh, 1vw);
+  }
+
+  &__submit-btn {
+    @include button-submit-small;
+    font-weight: 200;
+    font-size: 2.5vh;
+  }
+}

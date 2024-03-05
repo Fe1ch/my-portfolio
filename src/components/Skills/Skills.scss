@@ -1,0 +1,55 @@
+@import "../../scss/_shared.scss";
+
+.skills {
+  @include form-base_add-width(85%);
+  padding: 2vh 1vw 3vh 1vw;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+
+  &__title {
+    @include formtitle(2.5vh);
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+      gap: 4vw;
+    }
+  }
+
+  &__img {
+    max-width: 3vw;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 1024px) {
+      min-width: 4vw;
+    }
+
+    @media (max-width: 768px) {
+      min-width: 7vw;
+    }
+
+    @media (max-width: 576px) {
+      min-width: 8vw;
+    }
+
+    @media (max-width: 425px) {
+      min-width: 10vw;
+    }
+  }
+}
