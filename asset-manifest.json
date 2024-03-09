@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.23f41cca.css",
-    "main.js": "/my-portfolio/static/js/main.76147f9d.js",
+    "main.css": "/my-portfolio/static/css/main.d4e763cc.css",
+    "main.js": "/my-portfolio/static/js/main.2c582369.js",
     "static/js/453.41811d64.chunk.js": "/my-portfolio/static/js/453.41811d64.chunk.js",
     "static/media/ava.jpg": "/my-portfolio/static/media/ava.fe58b6f6437022a4262e.jpg",
     "static/media/Russian Travel.png": "/my-portfolio/static/media/Russian Travel.3eff7bd77fac6feb8579.png",
     "static/media/How to Learn.png": "/my-portfolio/static/media/How to Learn.24dffae794e1f1168b27.png",
     "static/media/Mesto.png": "/my-portfolio/static/media/Mesto.5a1ef18465df0dbc8c5d.png",
-    "static/media/resume.pdf": "/my-portfolio/static/media/resume.9af83dca6bfc456040d6.pdf",
+    "static/media/resume.pdf": "/my-portfolio/static/media/resume.4051f948da72c9c07154.pdf",
     "static/media/not-found-angry-face.svg": "/my-portfolio/static/media/not-found-angry-face.6345af76659f388f6601280206fb3386.svg",
+    "static/media/RickAndMorty.png": "/my-portfolio/static/media/RickAndMorty.c789d30c79e9f6a5637b.png",
     "static/media/react.svg": "/my-portfolio/static/media/react.e7574af26628c8d8cc52d64e015eb898.svg",
     "static/media/24.svg": "/my-portfolio/static/media/24.820379693d95c67bc80a.svg",
     "static/media/sass.svg": "/my-portfolio/static/media/sass.49f3181ad1b144891012e42dd4bac07e.svg",
@@ -73,12 +74,12 @@
     "static/media/figma.svg": "/my-portfolio/static/media/figma.44ca2c329ade686d78f62ad73790c621.svg",
     "static/media/css3.svg": "/my-portfolio/static/media/css3.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/html5.svg": "/my-portfolio/static/media/html5.c1bb84e022ca9d76984d4b943bd678fd.svg",
-    "main.23f41cca.css.map": "/my-portfolio/static/css/main.23f41cca.css.map",
-    "main.76147f9d.js.map": "/my-portfolio/static/js/main.76147f9d.js.map",
+    "main.d4e763cc.css.map": "/my-portfolio/static/css/main.d4e763cc.css.map",
+    "main.2c582369.js.map": "/my-portfolio/static/js/main.2c582369.js.map",
     "453.41811d64.chunk.js.map": "/my-portfolio/static/js/453.41811d64.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.23f41cca.css",
-    "static/js/main.76147f9d.js"
+    "static/css/main.d4e763cc.css",
+    "static/js/main.2c582369.js"
   ]
 }
